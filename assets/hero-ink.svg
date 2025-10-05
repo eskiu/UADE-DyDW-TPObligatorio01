@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Arte hero de tinta y papel">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7f4ef"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#1f4b99"/>
+      <stop offset="1" stop-color="#0f1115"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <g opacity=".6">
+    <path d="M0,420 C220,360 420,560 960,420 L960,540 L0,540 Z" fill="#eae7df"/>
+    <path d="M0,420 C280,380 460,520 960,380 L960,540 L0,540 Z" fill="#ddd7cc" opacity=".6"/>
+  </g>
+  <g>
+    <path d="M0,260 C160,220 260,300 460,280 C660,260 740,300 960,260" fill="none" stroke="url(#ink)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M0,300 C140,260 280,340 460,320 C640,300 800,360 960,300" fill="none" stroke="#1f4b99" stroke-opacity=".4" stroke-width="8" stroke-linecap="round"/>
+    <path d="M0,340 C180,300 360,380 560,360 C760,340 860,420 960,340" fill="none" stroke="#0f1115" stroke-opacity=".35" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(760 160) scale(1.6)">
+    <path d="M60 12c12 14 20 26 20 36c0 12-9 22-20 22s-20-10-20-22c0-10 8-22 20-36z" fill="url(#ink)" opacity=".9"/>
+    <circle cx="60" cy="78" r="6" fill="#0f1115" opacity=".8"/>
+  </g>
+</svg>

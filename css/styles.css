@@ -1,0 +1,202 @@
+:root {
+  --ink: #0f1115;
+  --paper: #f7f4ef;
+  --accent: #1f4b99;
+  --wine: #7a2e2e;
+  --muted: #8a8f98;
+  --radius: 18px;
+  --shadow: 0 10px 30px rgba(15, 17, 21, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1100px;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--paper);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.brand img {
+  width: 40px;
+  height: 40px;
+}
+
+.brand .name {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.45rem;
+  letter-spacing: 0.06em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--ink);
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  outline: none;
+  border-color: var(--wine);
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.section h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 2rem;
+  margin: 0 0 18px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+  flex: 1 1 260px;
+  min-width: 260px;
+  max-width: 340px;
+}
+
+.card .cover {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  aspect-ratio: 3/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card h3 {
+  margin: 0 0 6px;
+  font-size: 1.15rem;
+}
+
+.card p {
+  margin: 0;
+  color: #333;
+}
+
+.price {
+  margin-top: 10px;
+  font-weight: 600;
+  color: var(--wine);
+}
+
+.lead {
+  color: #2c2f36;
+}
+
+.site-footer {
+  margin-top: 40px;
+  padding: 22px 0 40px;
+  color: #444;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.site-footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 780px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 28px 0;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .flex {
+    justify-content: center;
+  }
+
+  .card {
+    flex-basis: 100%;
+    max-width: 500px;
+  }
+
+  .card .cover {
+    aspect-ratio: auto;
+  }
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Logo INK">
+  <defs>
+    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#1f4b99"/>
+      <stop offset="1" stop-color="#0f1115"/>
+    </linearGradient>
+    <filter id="s" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#0f1115" flood-opacity=".2"/>
+    </filter>
+  </defs>
+  <rect rx="24" ry="24" width="120" height="120" fill="#f7f4ef"/>
+  <g filter="url(#s)">
+    <path d="M60 22c10 12 16 22 16 30 0 9-7 16-16 16s-16-7-16-16c0-8 6-18 16-30z" fill="url(#g)"/>
+    <circle cx="60" cy="86" r="6" fill="#0f1115"/>
+  </g>
+</svg>
