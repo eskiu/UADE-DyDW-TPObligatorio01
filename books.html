@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/promociones.css" />
   </head>
   <body>
     <header class="site-header">
@@ -23,9 +24,34 @@
           <a href="index.html">Inicio</a>
           <a href="about.html">Nosotros</a>
           <a href="books.html" aria-current="page">Libros</a>
+          <a href="promociones.html">Promociones</a>
           <a href="contact.html">Ubicación & Contacto</a>
         </nav>
+        <div class="nav-actions">
+          <button class="cart-btn" id="cart-toggle" aria-label="Ver carrito">
+            <span class="cart-icon">🛒</span>
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+          <button class="menu-toggle" id="menu-toggle" aria-label="Menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Menú móvil">
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Nosotros</a>
+          <a href="books.html" aria-current="page">Libros</a>
+          <a href="promociones.html">Promociones</a>
+          <a href="contact.html">Ubicación & Contacto</a>
+          <button class="cart-btn-mobile" id="cart-toggle-mobile" aria-label="Ver carrito">
+            <span class="cart-icon">🛒</span>
+            <span>Carrito</span>
+            <span class="cart-count" id="cart-count-mobile">0</span>
+          </button>
+        </nav>
       </div>
+      <div class="mobile-menu-overlay" id="menu-overlay"></div>
     </header>
     <main class="container">
       <section class="section">
@@ -49,6 +75,16 @@
               reducir ansiedad y vivir con claridad emocional.
             </p>
             <div class="price">$ 21.900</div>
+            <button 
+              class="btn-add-cart"
+              data-product-id="no_te_creas"
+              data-product-name="No te creas todo lo que pienses"
+              data-product-author="Nguyen Joseph · Aguilar"
+              data-product-price="21900"
+              data-product-original-price="21900"
+              data-product-discount="0">
+              Agregar al carrito
+            </button>
           </article>
           <article class="card">
             <div class="cover">
@@ -64,6 +100,16 @@
               páginas matutinas, citas artísticas y ejercicios introspectivos.
             </p>
             <div class="price">$ 24.000</div>
+            <button 
+              class="btn-add-cart"
+              data-product-id="camino_artista"
+              data-product-name="El camino del artista"
+              data-product-author="Julia Cameron · Planeta"
+              data-product-price="24000"
+              data-product-original-price="24000"
+              data-product-discount="0">
+              Agregar al carrito
+            </button>
           </article>
           <article class="card">
             <div class="cover">
@@ -79,6 +125,16 @@
               símbolos y conspiraciones sobre la conciencia humana.
             </p>
             <div class="price">$ 39.800</div>
+            <button 
+              class="btn-add-cart"
+              data-product-id="ultimo_secreto"
+              data-product-name="El último secreto"
+              data-product-author="Dan Brown · Planeta"
+              data-product-price="39800"
+              data-product-original-price="39800"
+              data-product-discount="0">
+              Agregar al carrito
+            </button>
           </article>
           <article class="card">
             <div class="cover">
@@ -94,6 +150,16 @@
               Hogwarts.
             </p>
             <div class="price">$ 29.900</div>
+            <button 
+              class="btn-add-cart"
+              data-product-id="harry_potter"
+              data-product-name="Harry Potter y la Piedra Filosofal"
+              data-product-author="J. K. Rowling · Salamandra"
+              data-product-price="29900"
+              data-product-original-price="29900"
+              data-product-discount="0">
+              Agregar al carrito
+            </button>
           </article>
           <article class="card">
             <div class="cover">
@@ -109,6 +175,16 @@
               investigación Barcelona-Lyon sobre trata y corrupción policial.
             </p>
             <div class="price">$ 24.000</div>
+            <button 
+              class="btn-add-cart"
+              data-product-id="la_desconocida"
+              data-product-name="La desconocida"
+              data-product-author="Montero, Rosa; Truc Olive · Alfaguara"
+              data-product-price="24000"
+              data-product-original-price="24000"
+              data-product-discount="0">
+              Agregar al carrito
+            </button>
           </article>
           <article class="card">
             <div class="cover">
@@ -124,6 +200,16 @@
               felicidad en instantes cotidianos.
             </p>
             <div class="price">$ 23.900</div>
+            <button 
+              class="btn-add-cart"
+              data-product-id="la_felicidad"
+              data-product-name="La felicidad"
+              data-product-author="Gabriel Rolón · Planeta"
+              data-product-price="23900"
+              data-product-original-price="23900"
+              data-product-discount="0">
+              Agregar al carrito
+            </button>
           </article>
           <article class="card">
             <div class="cover">
@@ -139,6 +225,16 @@
               método, vestuario y camino hacia 2026.
             </p>
             <div class="price">$ 9.900</div>
+            <button 
+              class="btn-add-cart"
+              data-product-id="lionel_scaloni"
+              data-product-name="Lionel Scaloni"
+              data-product-author="Diego Borinsky · Sudamericana"
+              data-product-price="9900"
+              data-product-original-price="9900"
+              data-product-discount="0">
+              Agregar al carrito
+            </button>
           </article>
           <article class="card">
             <div class="cover">
@@ -154,6 +250,16 @@
               reinventa entre amores y guerra civil de 1891.
             </p>
             <div class="price">$ 29.000</div>
+            <button 
+              class="btn-add-cart"
+              data-product-id="emilia_del_valle"
+              data-product-name="Mi nombre es Emilia del Valle"
+              data-product-author="Allende Isabel · Plaza Janes"
+              data-product-price="29000"
+              data-product-original-price="29000"
+              data-product-discount="0">
+              Agregar al carrito
+            </button>
           </article>
           <article class="card">
             <div class="cover">
@@ -169,6 +275,16 @@
               aprende perdón y amor propio.
             </p>
             <div class="price">$ 22.500</div>
+            <button 
+              class="btn-add-cart"
+              data-product-id="mientras_respires"
+              data-product-name="Mientras respires estás a tiempo"
+              data-product-author="Leti Arévalo · Random"
+              data-product-price="22500"
+              data-product-original-price="22500"
+              data-product-discount="0">
+              Agregar al carrito
+            </button>
           </article>
         </div>
       </section>
@@ -182,5 +298,22 @@
         </div>
       </div>
     </footer>
+    <div class="cart-modal" id="cart-modal">
+      <div class="cart-modal-content">
+        <div class="cart-header">
+          <h3>Tu carrito</h3>
+          <button class="cart-close" id="cart-close" aria-label="Cerrar carrito">×</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+        </div>
+        <div class="cart-footer">
+          <div class="cart-total">
+            <strong>Total: <span id="cart-total">$ 0</span></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/carrito.js" defer></script>
+    <script src="js/menu.js" defer></script>
   </body>
 </html>

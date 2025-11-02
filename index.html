@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/promociones.css" />
   </head>
   <body>
     <header class="site-header">
@@ -24,9 +25,34 @@
           <a href="index.html" aria-current="page">Inicio</a>
           <a href="about.html">Nosotros</a>
           <a href="books.html">Libros</a>
+          <a href="promociones.html">Promociones</a>
           <a href="contact.html">Ubicación & Contacto</a>
         </nav>
+        <div class="nav-actions">
+          <button class="cart-btn" id="cart-toggle" aria-label="Ver carrito">
+            <span class="cart-icon">🛒</span>
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+          <button class="menu-toggle" id="menu-toggle" aria-label="Menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Menú móvil">
+          <a href="index.html" aria-current="page">Inicio</a>
+          <a href="about.html">Nosotros</a>
+          <a href="books.html">Libros</a>
+          <a href="promociones.html">Promociones</a>
+          <a href="contact.html">Ubicación & Contacto</a>
+          <button class="cart-btn-mobile" id="cart-toggle-mobile" aria-label="Ver carrito">
+            <span class="cart-icon">🛒</span>
+            <span>Carrito</span>
+            <span class="cart-count" id="cart-count-mobile">0</span>
+          </button>
+        </nav>
       </div>
+      <div class="mobile-menu-overlay" id="menu-overlay"></div>
     </header>
     <main class="container">
       <section class="hero">
@@ -109,5 +135,22 @@
         </div>
       </div>
     </footer>
+    <div class="cart-modal" id="cart-modal">
+      <div class="cart-modal-content">
+        <div class="cart-header">
+          <h3>Tu carrito</h3>
+          <button class="cart-close" id="cart-close" aria-label="Cerrar carrito">×</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+        </div>
+        <div class="cart-footer">
+          <div class="cart-total">
+            <strong>Total: <span id="cart-total">$ 0</span></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/carrito.js" defer></script>
+    <script src="js/menu.js" defer></script>
   </body>
 </html>

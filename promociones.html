@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nosotros · INK Bookstore</title>
+    <title>Promociones · INK Bookstore</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,9 +22,9 @@
         </a>
         <nav class="nav-links" aria-label="Navegación principal">
           <a href="index.html">Inicio</a>
-          <a href="about.html" aria-current="page">Nosotros</a>
+          <a href="about.html">Nosotros</a>
           <a href="books.html">Libros</a>
-          <a href="promociones.html">Promociones</a>
+          <a href="promociones.html" aria-current="page">Promociones</a>
           <a href="contact.html">Ubicación & Contacto</a>
         </nav>
         <div class="nav-actions">
@@ -40,9 +40,9 @@
         </div>
         <nav class="mobile-menu" id="mobile-menu" aria-label="Menú móvil">
           <a href="index.html">Inicio</a>
-          <a href="about.html" aria-current="page">Nosotros</a>
+          <a href="about.html">Nosotros</a>
           <a href="books.html">Libros</a>
-          <a href="promociones.html">Promociones</a>
+          <a href="promociones.html" aria-current="page">Promociones</a>
           <a href="contact.html">Ubicación & Contacto</a>
           <button class="cart-btn-mobile" id="cart-toggle-mobile" aria-label="Ver carrito">
             <span class="cart-icon">🛒</span>
@@ -55,48 +55,16 @@
     </header>
     <main class="container">
       <section class="section">
-        <h2>Quiénes somos</h2>
+        <h2>Promociones</h2>
         <p class="lead">
-          INK nació con una idea simple:
-          <em>leer es una forma de encuentro</em>. En el corazón de la galería,
-          construimos un espacio íntimo para leer, conversar y descubrir
-          editoriales independientes. Nuestro criterio es curado, cercano y
-          atento a voces nuevas.
+          Aprovechá nuestras ofertas especiales. Todos los libros seleccionados
+          tienen descuentos exclusivos por tiempo limitado.
         </p>
-      </section>
-
-      <section class="section">
-        <h2>Nuestra propuesta</h2>
-        <div class="flex">
-          <article class="card">
-            <h3>Selección cuidada</h3>
-            <p>
-              Títulos elegidos a mano: narrativa contemporánea, no-ficción,
-              poesía y novela gráfica.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Club de lectura</h3>
-            <p>Encuentros mensuales y charlas con autoras y autores.</p>
-          </article>
-          <article class="card">
-            <h3>Rincón café</h3>
-            <p>
-              Un cafecito para hojear con calma. Pedí tu recomendación del mes.
-            </p>
-          </article>
+        <div class="flex" id="promos-container">
         </div>
       </section>
     </main>
-    <footer class="site-footer">
-      <div class="container row">
-        <div>© <span id="year">2025</span> INK — Librería independiente.</div>
-        <div>
-          IG: @ink.libreria ·
-          <a href="mailto:hola@inklibros.com">hola@inklibros.com</a>
-        </div>
-      </div>
-    </footer>
+
     <div class="cart-modal" id="cart-modal">
       <div class="cart-modal-content">
         <div class="cart-header">
@@ -112,7 +80,18 @@
         </div>
       </div>
     </div>
+
+    <footer class="site-footer">
+      <div class="container row">
+        <div>© <span id="year">2025</span> INK — Librería independiente.</div>
+        <div>
+          IG: @ink.libreria ·
+          <a href="mailto:hola@inklibros.com">hola@inklibros.com</a>
+        </div>
+      </div>
+    </footer>
     <script src="js/carrito.js" defer></script>
+    <script src="js/promociones.js" defer></script>
     <script src="js/menu.js" defer></script>
   </body>
 </html>
